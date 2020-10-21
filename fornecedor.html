@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro Fornecedor</title>
+    <link rel="stylesheet" type="text/css" href="css/fornecedor.css">
+
+</head>
+
+<body>
+    <header id="cab_profile">
+        <nav>
+            <div class="cabecalho">
+                <a href="Paginainicial.html">
+                    <img src="img/image1.png">
+                </a>
+            </div>
+            <div class="topnav">
+                <a href="Paginainicial.html">Home</a>
+                <a class="active" href="fornecedor.html">Cadastro Fornecedores</a>
+                <a href="consumidor.html">Cadastro Consumidor</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section style="width: 100%; background-color: #f5f5f5; border-top: solid 2px #9397b3;">
+        <br><br>
+        <div class="marginleft">
+            <div class="info">
+                <div class="formulario_fornecedor">
+                    <fieldset style="width: 715px; height: 690px; border-radius: 10px;">
+                        <div id="title_form">
+                            <h1>Cadastro de Fornecedor</h1>
+                        </div>
+                        <form id="form_cad" action="" method="post">
+                            <div id="f_div_1">
+                                <label for="f_nome">Nome/Razão Social</label><br>
+                                <input class="box_form" style="width: 280px;" type="text" name="f_nome" id="f_nome"
+                                    required><br>
+
+                                <label for="f_cpf_cnpj">CPF/CNPJ</label><br>
+                                <input class="box_form2" type="text" name="f_cpf_cnpj" id="f_cpf_cnpj" required><br>
+
+                                <label for="f_especialidade">Especialidade</label><br>
+                                <div style="float: left;">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Eletricista</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Encanador</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Jardineiro</label>
+                                    </div>
+                                </div>
+                                <div style="float: right;">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Limpeza Geral</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Pedreiro</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Pintor</label>
+                                    </div>
+                                </div><br><br><br><br><br><br><br>
+
+                                <label for="f_descricao">Descrição</label><br>
+                                <input class="box_form" style="height: 70px; width: 700px;" type="text"
+                                    name="f_descricao" id="f_descricao" required><br>
+                            </div>
+
+                            <div id="f_div_2">
+                                <label for="f_tel_1">Telefone 01</label><br>
+                                <input class="box_form2" type="text" name="f_tel_01" id="f_tel_01" required><br>
+
+                                <label for="f_tel_02">Telefone 02</label><br>
+                                <input class="box_form2" type="text" name="f_tel_02" id="f_tel_02"><br>
+
+                                <label for="f_email">Email</label><br>
+                                <input class="box_form2" style="width: 280px;" type="text" name="f_email" id="f_email"
+                                    required><br>
+
+                                <label for="f_password1">Senha</label><br>
+                                <input class="box_form2" style="width: 280px;" type="password" name="f_password1"
+                                    id="f_password1" required><br>
+
+                                <label for="f_password2">Repita sua Senha</label><br>
+                                <input class="box_form2" style="width: 280px;" type="password" name="f_password2"
+                                    id="f_password2" required><br>
+                            </div>
+                            <div id="f_div_3">
+                                <label for="f_cep">CEP</label><br>
+                                <input class="box_form2" type="text" name="f_cep" id="f_cep" required><br>
+
+                                <label for="f_num">Número</label><br>
+                                <input class="box_form2" type="text" name="f_num" id="f_num" required><br>
+
+                                <label for="f_comp">Complemento</label><br>
+                                <input class="box_form2" type="text" name="f_comp" id="f_comp"><br>
+
+                                <label for="f_foto">Carregar uma foto:</label>
+                                <input type="file" id="f_foto" name="f_foto" accept="image/png, image/jpeg">
+                            </div>
+
+                            <div id="f_div_4">
+                                <label for="f_bairro">Bairro</label><br>
+                                <input class="box_form2" style="width: 280px;" type="text" name="f_bairro"
+                                    id="f_bairro"><br>
+
+                                <label for="f_cidade">Cidade</label><br>
+                                <input class="box_form2" style="width: 280px;" type="text" name="f_cidade"
+                                    id="f_cidade"><br>
+
+                                <label for="f_estado">Estado</label><br>
+                                <input class="box_form2" type="text" name="f_estado" id="f_estado">
+                            </div>
+                            <div id="f_div_5">
+                                <button style="height: 50px; width: 100px; border: solid 1px #b8b6b6;" type="submit">
+                                    <span>ENVIAR</span>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="box_check">
+                            <br><br><br>
+                            <img src="img/form_check.png" alt="" srcset="">
+                        </div>
+
+
+
+
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </section>
+</body>
+
+<html>
