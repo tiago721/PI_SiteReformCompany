@@ -1,60 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Login - teste</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css\login.css">
 </head>
-
 <body>
+    <header id="cab_profile">
+        <nav>
+            <div class="cabecalho">
+                <a href="Paginainicial.html">
+                    <img src="img/image1.png">
+                </a>
+            </div>
+            <div class="topnav">
+                <a href="Paginainicial.html">Home</a>
+                <a href="fornecedor.html">Cadastro Fornecedores</a>
+                <a href="consumidor.html">Cadastro Consumidor</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+                <a class="active" href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="cabecalho">
-        <img src="../PROJETO NOVO/img/image1.png">
+    <section>
+        <div id="mainsigin">
+            <div>
+                <div>
+                    <div id="login_dv1">
+                        <h5 id="title1">FAÇA LOGIN NA SUA CONTA DA REFORM COMPANY<br></h5>
+                        <hr>
+                    </div>
+                    
+                    <form id="signup-form" onsubmit="return false;">                        
+                        <div class="form-label-group">
+                            <input type="email" class="form-control" id="email" required="" name="email"
+                                placeholder="E-MAIL">
+                        </div>
+                        <div class="form-label-group">
+                            <input type="password" class="form-control" id="password" required="" name="password"
+                                placeholder="SENHA">
+                        </div>
+                        <button type="submit">
+                            <span>LOGIN</span>
+                        </button>
+                    </form>
+                    <div id="opc">
+                        <div id="opc01">
+                            <p>ou </p><a href="">Esqueci a Senha</a>                            
+                        </div>
+                        <div id="opc02">
+                            <p>Não tem uma conta? <a href="">Inscreva-se</a> </p>                            
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-    <br>
-
-    <nav class="menu_login">
-
-        <a href="../PROJETO NOVO/Paginainicial.html" ; style="text-decoration:none"><button>INICIO</button></a>
-
-    </nav>
-
-    <nav class="inf">
-        <fieldset>
-            <center><br><br><br>
-                <label for="Login">Login : </label>
-                <input type="text" name="Login" id="nome_id“" /><br><br><br>
-                <label for="Senha">Senha : </label>
-                <input type="password" name="Senha" id="Senha“" /><br><br><br>
-                <input id="botao_id" type="submit" value="Entrar" />
-
-            </center>
-
-        </fieldset>
-    </nav>
-    <br>
-
-
-    <nav class="login_rodape">
-        <fieldset>
-            <h2>
-                <center>Cadastre Já !<br>
-                    <a href="../PROJETO NOVO/consumidor.html" ; style="text-decoration:none"><input id="botao_id"
-                            type="submit" value="Consumidor" /></a><br>
-                    <a href="../PROJETO NOVO/fornecedor.html" ; style="text-decoration:none"><input id="botao_id"
-                            type="submit" value="Fornecedor" /></a><br>
-
-        </fieldset>
-    </nav>
-    <br><br>
-
-
-
-
-
-
+            </div>
+        </div>
+    </section>
 </body>
-<html>
+</html>
