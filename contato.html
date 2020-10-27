@@ -10,34 +10,45 @@
 </head>
 
 <body>
-  
-    <br><br><br>
-    <div class="formulario_contatos">
-        <img src="img/contato.jpg">
-        <fieldset style="width: 715px; height: 370px;  ">
-            
-            <div class="box">
-                
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <input type="text" placeholder="Nome"><br><br>
-
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="text" placeholder="Email"><br><br>
-
-                <i class="fa fa-pencil" aria-hidden="true"></i>
-                <input type="text" placeholder="Assunto"><br><br>
-
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i><br>
-                <textarea id="msg_id" name="mensagem" rows="5" cols="30" placeholder=" Mensagem"></textarea><br><br>
-
-                <button>Enviar</button>
-
+    <header id="cab_profile">
+        <nav>
+            <div class="cabecalho">
+                <a href="Paginainicial.html">
+                    <img src="img/image1.png">
+                </a>
             </div>
+            <div class="topnav">
+                <a href="Paginainicial.html">Home</a>
+                <a href="fornecedor.html">Cadastro Fornecedores</a>
+                <a href="consumidor.html">Cadastro Consumidor</a>
+                <a href="servicos.html">Serviços</a>
+                <a class="active" href="contato.html">Contato</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
 
-    </div>
+    <section>
+        <div class="formulario_contatos" id="div_sec">
+            <img src="img/contato.jpg">
+            <fieldset style="width: 715px; height: 370px;  ">
+                <div class="box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Nome"><br><br>
 
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="text" placeholder="Email"><br><br>
 
-    </div>
-    
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <input type="text" placeholder="Assunto"><br><br>
+
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i><br>
+                    <textarea id="msg_id" name="mensagem" rows="5" cols="30" placeholder=" Mensagem"></textarea>
+                    <button>Enviar</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
 </body>
 <html>
