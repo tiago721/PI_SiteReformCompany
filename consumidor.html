@@ -27,90 +27,93 @@
         </nav>
     </header>
 
-    <section style="width: 100%; background-color: #f5f5f5; border-top: solid 2px #9397b3;">
-        <br><br>
-        <div class="marginleft">
-            <div class="info">
-                <div class="formulario_fornecedor">
-                    <fieldset style="width: 715px; height: 690px; border-radius: 10px;">
-                        <div id="title_form">
-                            <h1>Cadastro de Consumidor</h1>
-                        </div>
-                        <form id="form_cad" action="" method="post">
-                            <div id="c_div_1">
-                                <label for="c_nome">Nome Completo</label><br>
-                                <input class="box_form" style="width: 280px;" type="text" name="c_nome" id="c_nome"
-                                    required><br>
+    <section style="width: 100%; height: 100%; background-color: #f5f5f5; border-top: solid 2px #9397b3;">
+        <div id="secDiv" style="width: 715px; height: 100%; border-radius: 10px; margin: auto;">
+            <br><br>
+            <div>
+                <div class="info">
+                    <div class="formulario_fornecedor">
+                        <fieldset style="border-radius: 10px;">
+                            <div id="title_form">
+                                <h1>Cadastro de Consumidor</h1>
+                            </div>
+                            <form id="form_cad" action="" method="post">
+                                <div id="c_div_1">
+                                    <label for="c_nome">Nome Completo</label><br>
+                                    <input class="box_form" style="width: 280px;" type="text" name="c_nome" id="c_nome"
+                                        required><br>
 
-                                <label for="c_cpf">CPF</label><br>
-                                <input class="box_form2" type="text" name="c_cpf" id="c_cpf" required><br><br><br>     
+                                    <label for="c_cpf">CPF</label><br>
+                                    <input class="box_form2" type="text" name="c_cpf" id="c_cpf" required><br><br><br>
 
-                                <label for="c_email">Email</label><br>
-                                <input class="box_form2" style="width: 280px;" type="text" name="c_email" id="c_email"
-                                    required><br>
+                                    <label for="c_email">Email</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="text" name="c_email"
+                                        id="c_email" required><br>
 
-                                <label for="c_password1">Senha</label><br>
-                                <input class="box_form2" style="width: 280px;" type="password" name="c_password1"
-                                    id="c_password1" required><br>
+                                    <label for="c_password1">Senha</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="password" name="c_password1"
+                                        id="c_password1" required><br>
 
-                                <label for="c_password2">Repita sua Senha</label><br>
-                                <input class="box_form2" style="width: 280px;" type="password" name="c_password2"
-                                    id="c_password2" required><br>                        
+                                    <label for="c_password2">Repita sua Senha</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="password" name="c_password2"
+                                        id="c_password2" required><br>
+                                </div>
+
+                                <div id="c_div_2">
+                                    <label for="c_tel_1">Telefone 01</label><br>
+                                    <input class="box_form2" type="text" name="c_tel_01" id="c_tel_01" required><br>
+
+                                    <label for="c_tel_02">Telefone 02</label><br>
+                                    <input class="box_form2" type="text" name="c_tel_02" id="c_tel_02"><br>
+
+                                </div>
+                                <div id="c_div_3">
+                                    <label for="c_cep">CEP</label><br>
+                                    <input class="box_form2" type="text" name="c_cep" id="c_cep" required><br>
+
+                                    <label for="c_num">Número</label><br>
+                                    <input class="box_form2" type="text" name="c_num" id="c_num" required><br>
+
+                                    <label for="c_comp">Complemento</label><br>
+                                    <input class="box_form2" type="text" name="c_comp" id="c_comp"><br><br>
+
+                                    <label for="c_foto">Carregar uma foto:</label>
+                                    <input type="file" id="c_foto" name="c_foto" accept="image/png, image/jpeg">
+                                </div>
+
+                                <div id="c_div_4">
+                                    <label for="c_bairro">Bairro</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="text" name="c_bairro"
+                                        id="c_bairro"><br>
+
+                                    <label for="c_cidade">Cidade</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="text" name="c_cidade"
+                                        id="c_cidade"><br>
+
+                                    <label for="c_estado">Estado</label><br>
+                                    <input class="box_form2" type="text" name="c_estado" id="c_estado">
+                                </div>
+                                <div id="c_div_5">
+                                    <button style="height: 50px; width: 100px; border: solid 1px #b8b6b6;"
+                                        type="submit">
+                                        <span>ENVIAR</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="box_check">
+                                <br><br><br>
+                                <img src="img/form_check.png" alt="" srcset="">
                             </div>
 
-                            <div id="c_div_2">
-                                <label for="c_tel_1">Telefone 01</label><br>
-                                <input class="box_form2" type="text" name="c_tel_01" id="c_tel_01" required><br>
-
-                                <label for="c_tel_02">Telefone 02</label><br>
-                                <input class="box_form2" type="text" name="c_tel_02" id="c_tel_02"><br>
-                                
-                            </div>
-                            <div id="c_div_3">
-                                <label for="c_cep">CEP</label><br>
-                                <input class="box_form2" type="text" name="c_cep" id="c_cep" required><br>
-
-                                <label for="c_num">Número</label><br>
-                                <input class="box_form2" type="text" name="c_num" id="c_num" required><br>
-
-                                <label for="c_comp">Complemento</label><br>
-                                <input class="box_form2" type="text" name="c_comp" id="c_comp"><br><br>
-
-                                <label for="c_foto">Carregar uma foto:</label>
-                                <input type="file" id="c_foto" name="c_foto" accept="image/png, image/jpeg">
-                            </div>
-
-                            <div id="c_div_4">
-                                <label for="c_bairro">Bairro</label><br>
-                                <input class="box_form2" style="width: 280px;" type="text" name="c_bairro"
-                                    id="c_bairro"><br>
-
-                                <label for="c_cidade">Cidade</label><br>
-                                <input class="box_form2" style="width: 280px;" type="text" name="c_cidade"
-                                    id="c_cidade"><br>
-
-                                <label for="c_estado">Estado</label><br>
-                                <input class="box_form2" type="text" name="c_estado" id="c_estado">
-                            </div>
-                            <div id="c_div_5">
-                                <button style="height: 50px; width: 100px; border: solid 1px #b8b6b6;" type="submit">
-                                    <span>ENVIAR</span>
-                                </button>
-                            </div>
-                        </form>
-                        <div id="box_check">
-                            <br><br><br>
-                            <img src="img/form_check.png" alt="" srcset="">
-                        </div>
 
 
 
-
-                    </fieldset>
+                        </fieldset>
+                    </div>
                 </div>
             </div>
+            <br><br><br><br>
         </div>
-        <br><br><br><br>
     </section>
 </body>
 
