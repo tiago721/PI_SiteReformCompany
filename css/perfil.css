@@ -94,27 +94,28 @@ section{
 /***************************************************************************************/
 
 
-#sec_div{
-    background-color: cornflowerblue;
+#sec_div{    
     width: 1200px;
     height: 580px;
     margin: auto;
     margin-top: 40px;
-    border-top: darkgray 1px solid;
 }
 #sec_div01{
     background-color: rgb(175, 203, 255);
     width: 15%;
-    height: 100%;
+    height: 30%;
     margin: auto;    
     float: left;
+    margin-left: -100px;
+    border-radius: 10px;
 }
 #sec_div02{
-    background-color: rgb(139, 139, 139);
     width: 85%;
     height: 100%;
     margin: auto;    
     float: left;
+    margin-left: 100px;
+    border-radius: 10px;
 }
 #text_title{
     height: 10%;
@@ -127,10 +128,12 @@ section{
     line-height: 40px;
 }
 #sec_div02_title{
-    background-color: white; 
+    background-color: white;
     height: 60px; 
     width: 100%;  
     float: left; 
+    border-radius: 10px;
+    text-align: center ;
 }
 #title00{
     color: darkblue;
@@ -148,4 +151,51 @@ section{
     font-size: 13px;
     text-align: left;
     line-height: 13px;
+}
+#sec_div02_article table td {
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+    width: 200px;
+    height: 20px;
+}
+#sec_div02_article table th {
+    width: 170px;
+}
+fieldset {
+    background-color:rgb(202, 240, 202);
+    width: 90%;
+    margin: auto;
+}  
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+  
+input {
+    margin: 5px;
+    width: 150px;
+}
+.changeWidth{
+      width: 15px;
+}
+#fieldset_A{
+    float: left;
+    margin: auto;
+    width: 200px;
+}
+#fieldset_B{
+    float: left;
+    margin: auto;
+    width: 200px;
+}
+.submit{
+    background-color:rgb(202, 240, 202);
+    border:solid 1px #dedede;
+    height: 30px;
+    width: 170px;
+    float: right;
+    margin-right: 17px;
+    font-weight: bold;
 }
